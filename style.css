@@ -1,0 +1,547 @@
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+@import url(http://fonts.googleapis.com/css?family=Gruppo);
+
+
+@import url(http://fonts.googleapis.com/css?family=Overlock+SC);
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	display: block;
+	width: 100%;
+}
+
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.clearfix:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+#container{
+	
+	/*margin: 0 auto;
+	padding-bottom: 75px;
+	background-image: url('background.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: right right;*/
+
+	background: url('background3.png') no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+#background{
+	width: 100%;
+	height: 500px;
+	background-attachment: fixed;
+	position: relative;
+}
+main{
+	padding-top: 350px;
+}
+
+
+
+header{
+	
+	font-family: "Gruppo";
+	padding-left: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: rgb(225,225,225);
+	line-height: 275%;
+	margin-bottom: 25px;
+}
+
+header h1{
+	color: rgb(66, 134, 244);
+	font-size: 300%; 
+	line-height: 75%;
+	padding-top: 2.5px;
+	text-transform: lowercase;
+}
+
+header h2{
+	/*color: rgb(139, 177, 239);*/
+	color: orange;
+	font-size: 220%;
+	letter-spacing: 1px;
+	text-transform: lowercase;	
+}
+
+nav{
+	margin-bottom: 25px;
+	background-color: rgb(225,225,225);
+	
+}
+#burger{
+	display: none;
+}
+
+nav.stuck{
+	position: fixed;
+	width:100%;
+	top: 0px;
+	left: 0;
+	border-bottom: 5px solid rgb(93, 94, 96);
+	/*border-bottom: 15px solid rgb(93, 94, 96);*/
+
+}
+
+nav ul{
+	list-style: none;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+nav ul li{
+	width: 25%;
+	float: left;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: rgb(225,225,225);
+}
+nav ul li a{
+	font-family: "Gruppo";
+	color: rgb(66, 134, 244);
+	font-size: 140%;
+	font-weight: bold;
+}
+
+main #about{
+	background-color: rgb(225,225,225);
+	margin-top: 25px;
+	padding-top: 30px;
+	padding-bottom: 60px;
+	margin-bottom: 55px;
+
+}
+#about section.left{
+	width: 40%;
+	float: left;
+}
+#about section.left img{
+	height: 300px;
+	width: 250px;
+	display: block;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+#about #mq2 .image img{
+	display: none;
+}
+#about section.left h4{
+	font-family: "Gruppo";
+	color: rgb(66, 134, 244);
+	font-weight: bold;
+	font-size: 150%;
+	text-align: center;
+	padding-top: 10px;
+	text-transform: lowercase;
+}
+#about section.right{
+	width: 60%;
+	float: right;
+}
+#about section.right h2{
+	padding-top: 30px;
+	font-family: "Gruppo";
+	color: rgb(66, 134, 244);
+	font-size: 250%;
+	text-transform: lowercase;
+}
+#about section.right h3{
+	padding-top: 5px;
+	font-family: "Gruppo";
+	/*color: rgb(139, 177, 239);*/
+	color: orange;
+	font-size: 200%;
+	text-transform: lowercase;
+}
+#about section.right p{
+	padding-top: 15px;
+	font-family: "Gruppo";
+	color: rgb(66, 134, 244);
+	font-size: 150%;
+	padding-right: 50px;
+}
+
+main #portfolio{
+	background-color: rgb(225,225,225);
+	margin-top: 25px;
+	padding-bottom: 30px;
+}
+#portfolio h3{
+	font-family: "Gruppo";
+	font-size: 250%;
+	color: rgb(86, 22, 22);
+	padding-top: 30px;
+	padding-left: 50px;
+}
+#portfolio p{
+	font-family: "Gruppo";
+	font-size: 150%;
+	color: rgb(114, 18, 50);
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+main #contact{
+	background-color: rgb(225,225,225);
+	margin-top: 25px;
+	font-family: "Gruppo";
+	padding-bottom: 30px;
+	margin-bottom: 5%;
+}
+
+#contact .text{
+	width: 50%;
+	float: left;
+	padding-left: 100px;
+	box-sizing: border-box;
+}
+
+#contact .text h2{
+	font-size: 250%;
+	/*color: rgb(66, 134, 244);*/
+	color: orange;
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-transform: lowercase;
+}
+
+#contact .text p{
+	font-size: 150%;
+	color: rgb(66, 134, 244);
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#contact_links p i{
+	padding-right: 25px;
+	color: rgb(66, 134, 244);
+}
+
+#contact_links p a:hover{
+	color: orange;
+	transition: 0.3s;
+}
+
+#social_media ul{
+	list-style: none;
+	padding-top: 5%;
+}
+#social_media ul li{
+	width: 25%;
+	float: left;
+	/*text-align: center;*/
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: rgb(225,225,225);
+}
+#social_media ul li a{
+	box-sizing: border-box;
+	/*color: rgb(66, 134, 244);*/
+	color: orange;
+	font-size: 140%;
+	font-weight: bold;
+	padding-left: 39.5%;
+}
+
+form{
+	padding-right: 100px;
+}
+
+#contact .form{
+	width: 50%;
+	float: right;
+	box-sizing: border-box;
+	padding: 50px 35px 20px 35px;
+}
+
+form input, textarea{
+	display: block;
+	font-family: "Gruppo";
+	width: 100%;
+	box-sizing: border-box;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+	padding: 15px;
+	font-size: 110%;
+	resize: none;
+}
+
+form input[type=submit]{
+	color: rgb(66, 134, 244);
+	text-transform: lowercase;
+	font-size: 130%;
+ 
+}
+
+
+main #sessions_and_costs{
+	background-color: rgb(225,225,225);
+	margin-top: 25px;
+	font-size: "Gruppo";
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 30px;
+}
+
+main #sessions_and_costs h2{
+	padding-top: 30px;
+	font-family: "Gruppo";
+	font-size: 250%;
+	color: rgb(86, 22, 22);
+}
+main #sessions_and_costs p{
+	font-family: "Gruppo";
+	font-size: 150%;
+	color: rgb(114, 18, 50);
+	padding-top: 20px;
+	
+}
+
+main #what_youll_need{
+	background-color: rgb(225,225,225);
+	margin-top: 25px;
+	font-family: "Gruppo";
+	padding-bottom: 30px;
+}
+
+#what_youll_need h2{
+	font-size: 250%;
+	color: rgb(86, 22, 22);
+	padding-top: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#what_youll_need p{
+	font-size: 150%;
+	color: rgb(114, 18, 50);
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+
+
+
+
+#spacer{
+	padding-top: 550px;
+}
+
+footer{
+	border-top: 5px solid rgb(93, 94, 96);
+	/*border-top: 15px solid rgb(93, 94, 96);*/
+	background-color: rgb(225,225,225);
+	margin-top: 25px;
+	font-family: "Gruppo";
+	/*padding-bottom: 25px;*/
+	padding-bottom: 10px;
+	position: fixed;
+	left:0px;
+   	bottom:0px;
+   	width:100%;
+}	   
+
+footer h5{
+	text-align: center;
+	font-size: 125%;
+	padding-top: .75%;
+	padding-bottom: 7.5px;
+	color: rgb(66, 134, 244);
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+
+footer h6{
+	text-align: center;
+	font-size: 100%;
+	color: rgb(139, 177, 239);
+	line-height: 10px;
+	letter-spacing: 1px;
+}
+
+@media (max-width: 990px){
+	nav ul li a{
+		font-size: 120%;
+	}
+	#family_law_mediation h2{
+		font-size: 200%;
+	}
+	#family_law_mediation p{
+		font-size: 125%
+	}
+	#about_karen section.left img{
+		height: 225px;
+		width: 225px;
+	}
+	#about_karen section.left h4{
+		font-size: 150%;
+	}
+	#about_karen section.right h2{
+		font-size: 200%;
+	}
+	#about_karen section.right h3{
+		font-size: 175%;
+	}
+	#about_karen section.right p{
+		font-size: 125%;
+		/*padding-right: 50px;*/
+	}
+	main #sessions_and_costs h2{
+		font-size: 200%;
+	}
+	main #sessions_and_costs p{
+		font-size: 125%;
+	}
+	#what_youll_need h2{
+		font-size: 200%;
+	}
+	#what_youll_need p{
+		font-size: 125%;
+	}
+	#locations_and_contact .text h2{
+		font-size: 200%;
+	}
+	#locations_and_contact .text p{
+		font-size: 125%;
+	}
+}
+
+@media (max-width: 775px){
+	#container{
+		background-image: url('courtroom.jpg');
+	}
+	#about_karen section.left{
+		display: none;
+	}
+	#about_karen section.right{
+		width: 100%;
+	}
+	#about_karen #mq2 .text{
+		width: 75%;
+		float: left;
+	}
+	#about_karen section.right h2{
+		padding-left: 50px;
+	}
+	#about_karen section.right h3{
+		padding-left: 50px;
+	}
+	#about_karen section.right p{
+		padding-left: 50px;
+	}
+	#about_karen #mq2 .image{
+		width: 25%;
+		float: right;
+	}
+	#about_karen #mq2 .image img{
+		padding-top: 20px;
+		height: 85px;
+		width: 85px;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 725px){
+	#locations_and_contact .text{
+		float: none;
+		width: 100%;
+	}
+	#locations_and_contact .form{
+		float: none;
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 560px){
+
+	header{
+		padding-left: 50px;
+	}
+
+	header h1{
+		font-size: 250%;
+	}
+
+	header h2{
+		font-size: 175%;
+	}
+
+	header h4{
+		font-size: 125%;
+	}
+
+	nav{
+		display: none;
+		position: fixed;
+		width:100%;
+		top: 0px;
+		left: 0;
+		border-bottom: 15px solid rgb(86, 22, 22);
+	}
+	#burger{
+		display: block;
+		float: right;
+		font-size: 36px;
+		padding: 18px;
+		cursor: pointer;
+		color: rgb(153, 0, 51);
+		position: fixed;
+		top: 5px;
+		right: 5px;
+		z-index: 999;
+	}
+	nav ul li{
+		float: none;
+		width: 100%;
+		padding-top: 7.5px;
+		padding-bottom: 7.5px;
+	}
+	#about_karen #mq2 .text{
+		float: none;
+		width: 100%;
+	}
+	#about_karen #mq2 .image{
+		float: none;
+		display: none;
+	}
+	
+	/*figure out header*/
+}
+
+@media (max-width: 500px){
+
+	header h4{
+		display: none;
+	}
+}
+
+
+@media (max-width: 400px){
+
+}
