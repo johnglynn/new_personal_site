@@ -213,7 +213,7 @@ main #contact{
 #contact .text{
 	width: 50%;
 	float: left;
-	padding-left: 100px;
+	padding-left: 7%;
 	box-sizing: border-box;
 }
 
@@ -221,10 +221,11 @@ main #contact{
 	font-size: 250%;
 	/*color: rgb(66, 134, 244);*/
 	color: orange;
-	padding-top: 50px;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-top: 8%;
+	padding-left: 8%;
+	padding-right: 3%;
 	text-transform: lowercase;
+	box-sizing: border-box;
 }
 
 #contact .text p{
