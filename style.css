@@ -60,9 +60,9 @@ main{
 header{
 	
 	font-family: "Gruppo";
-	padding-left: 100px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-left: 10%;
+	padding-top: 4%;
+	padding-bottom: 4%;
 	background-color: rgb(225,225,225);
 	line-height: 275%;
 	margin-bottom: 25px;
@@ -140,7 +140,7 @@ main #about{
 	width: 250px;
 	display: block;
 	margin: 0 auto;
-	padding-top: 50px;
+	padding-top: 6.5%;
 }
 #about #mq2 .image img{
 	display: none;
@@ -157,6 +157,8 @@ main #about{
 #about section.right{
 	width: 60%;
 	float: right;
+	padding-right: 8%;
+    box-sizing: border-box;
 }
 #about section.right h2{
 	padding-top: 30px;
@@ -186,21 +188,89 @@ main #portfolio{
 	margin-top: 25px;
 	padding-bottom: 30px;
 }
+
 #portfolio h3{
 	font-family: "Gruppo";
-	font-size: 250%;
-	color: rgb(86, 22, 22);
-	padding-top: 30px;
-	padding-left: 50px;
+	color: rgb(66, 134, 244);
+	font-size: 2.75vw;
+    padding-top: 3.5%;	
 }
+
+#portfolio h4{
+	font-family: "Gruppo";
+	color: orange;
+	font-size: 2.125vw;
+    padding-top: 2.5%;
+
+}
+
 #portfolio p{
 	font-family: "Gruppo";
-	font-size: 150%;
-	color: rgb(114, 18, 50);
-	padding-top: 20px;
-	padding-left: 50px;
-	padding-right: 50px;
+	color: rgb(139, 177, 239);
+	padding-top: 2.5%;
+	font-size: 1.5vw;
+    color: rgb(139, 177, 239);
+    padding-right: 6%;
 }
+
+.portfolio_left, .portfolio_right{
+	padding-top: 2.5%;
+}
+
+#portfolio .portfolio_left .image{
+	width: 40%;
+	float: left;
+	box-sizing: border-box;
+}
+
+#portfolio .portfolio_left .image img{
+	width: auto ;
+  	max-width: 80% ;
+ 	height: auto ;
+ 	margin: 0 auto;
+ 	padding-top: 5%;
+ 	padding-bottom: 5%;
+ 	padding-left: 5%;
+ 	padding-right: 5%;
+ 	background-color: rgb(139, 177, 239);
+}
+
+#portfolio .portfolio_left .text{
+	width: 60%;
+	float: right;
+	box-sizing: border-box;
+}
+
+#portfolio .portfolio_right{
+	padding-left: 5%;
+	box-sizing: border-box;
+}
+
+#portfolio .portfolio_right .image{
+	width: 40%;
+	float: right;
+	box-sizing: border-box;
+}
+
+#portfolio .portfolio_right .image img{
+	width: auto ;
+  	max-width: 80% ;
+ 	height: auto ;
+ 	margin: 0 auto;
+ 	padding-top: 5%;
+ 	padding-bottom: 5%;
+ 	padding-left: 5%;
+ 	padding-right: 5%;
+ 	background-color: rgb(139, 177, 239);
+}
+
+#portfolio .portfolio_right .text{
+	width: 60%;
+	float: left;
+	box-sizing: border-box;
+}
+
+
 
 main #contact{
 	background-color: rgb(225,225,225);
@@ -228,16 +298,20 @@ main #contact{
 	box-sizing: border-box;
 }
 
-#contact .text p{
+#contact_links{
+	padding-left: 12.5%;
+	box-sizing: border-box;
+}
+
+#contact_links p{
 	font-size: 150%;
 	color: rgb(66, 134, 244);
-	padding-top: 50px;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-top: 5.5vh;
+	padding-right: 1%;
 }
 
 #contact_links p i{
-	padding-right: 25px;
+	padding-right: 5%;
 	color: rgb(66, 134, 244);
 }
 
@@ -246,9 +320,13 @@ main #contact{
 	transition: 0.3s;
 }
 
+#social_media{
+	
+}
+
 #social_media ul{
 	list-style: none;
-	padding-top: 5%;
+	padding-top: 3.5vh;
 }
 #social_media ul li{
 	width: 25%;
