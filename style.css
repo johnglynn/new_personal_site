@@ -9,7 +9,7 @@
 
 *{
 	margin: 0;
-	padding: 0;
+	padding: 0; 
 }
 
 img{
@@ -58,7 +58,6 @@ main{
 
 
 header{
-	
 	font-family: "Gruppo";
 	padding-left: 10%;
 	padding-top: 4%;
@@ -376,37 +375,20 @@ form input[type=submit]{
 }
 
 
-main #sessions_and_costs{
+main #resume{
 	background-color: rgb(225,225,225);
 	margin-top: 25px;
-	font-size: "Gruppo";
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-bottom: 30px;
+	/*font-family: "Gruppo";*/
+	/*padding-bottom: 30px;*/
 }
 
-main #sessions_and_costs h2{
-	padding-top: 30px;
-	font-family: "Gruppo";
-	font-size: 250%;
-	color: rgb(86, 22, 22);
-}
-main #sessions_and_costs p{
-	font-family: "Gruppo";
-	font-size: 150%;
-	color: rgb(114, 18, 50);
-	padding-top: 20px;
-	
+main #resume #pdf_resume{
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
-main #what_youll_need{
-	background-color: rgb(225,225,225);
-	margin-top: 25px;
-	font-family: "Gruppo";
-	padding-bottom: 30px;
-}
-
-#what_youll_need h2{
+/*#what_youll_need h2{
 	font-size: 250%;
 	color: rgb(86, 22, 22);
 	padding-top: 30px;
@@ -420,7 +402,7 @@ main #what_youll_need{
 	padding-top: 20px;
 	padding-left: 50px;
 	padding-right: 50px;
-}
+}*/
 
 
 
