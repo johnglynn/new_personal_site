@@ -49,27 +49,46 @@ $(document).ready(function(){
 				// ,5000 = scroll time, can be any number but must be preceeded by a ","" in that position
 	});
 
+	// ********** START WORD FADE  **********
+
+	(function() {
+
+    var quotes = $(".quotes");
+    var quoteIndex = -1;
+    
+    function showNextQuote() {
+        ++quoteIndex;
+        quotes.eq(quoteIndex % quotes.length)
+            .fadeIn(2000)
+            .delay(2000)
+            .fadeOut(2000, showNextQuote);
+    }
+    
+    showNextQuote();
+    
+	})();
+
 	// ********** START BURGER MENU **********
 
-	if($(window).width() < 768){
-		$("body").addClass("mob");
-	}
+	// if($(window).width() < 768){
+	// 	$("body").addClass("mob");
+	// }
 
-	$(window).resize(function(){
-		if($(window).width() < 768){
-			$("body").addClass("mob");
-		}
-		else{
-			$("body").removeClass("mob");
-			$("nav").show();
-		}
-	});
+	// $(window).resize(function(){
+	// 	if($(window).width() < 768){
+	// 		$("body").addClass("mob");
+	// 	}
+	// 	else{
+	// 		$("body").removeClass("mob");
+	// 		$("nav").show();
+	// 	}
+	// });
 	
-	$("#burger").click(function(){
-		$("nav").slideToggle();
-		$(this).toggleClass("fa-bars");
-		$(this).toggleClass("fa-times");
-	});		
+	// $("#burger").click(function(){
+	// 	$("nav").slideToggle();
+	// 	$(this).toggleClass("fa-bars");
+	// 	$(this).toggleClass("fa-times");
+	// });		
 
 
 
